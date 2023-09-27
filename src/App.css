@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, h2, span, input, .btn {
+  font-family: "Poppins", cursive;
+}
+
+body {
+  /* background: #0f0c29; */
+  background-image: url(C:\Users\Aakarshan\Desktop\html\js\Final\important\src\assets\Background.jpg);
+  background-position: top;
+  background-size: cover;
+  /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+  /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.register {
+  width: 100vw;
+  display: flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: white;
+  background-image: linear-gradient(to right,rgba(53, 60, 69, 0),rgb(79, 90, 217));
+}
+
+.register span {
+  color: #adb5bd;
+}
+
+#form {
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form > input, .btn {
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus {
+  outline: none;
+}
+
+#form > .btn {
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.register .col-1 {
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-2 img {
+  width: 480px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  .register .col-2 img {
+    display: initial;
+  }
+}
+
+
+.heading{
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.head2{
+  text-align: center;
+}
+
+.clock{
+  position: absolute;
+  top: 100px;
+  /* box-shadow:2px 2px 20px 23px #7fecad; */
+  /* bottom: 0px; */
+  border: 3px solid;
+  border-radius: 3%;
+  border-color:azure;
+  left: 90%;
+  align-content: right;
+  color: azure; 
+}
+/* Navbar styles */
+.navbar {
+  background-color: #333; /* Background color */
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left; /* Float the links to the left */
+  display: block; /* Display links as blocks */
+  color: white; /* Text color */
+  text-align: center; /* Center-align text */
+  padding: 14px 16px; /* Padding around each link */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+
+/* Center-align the navbar links */
+.navbar a {
+  float: none;
+  display: inline-block;
+}
+
+/* Add some spacing between navbar links */
+.navbar a + a {
+  margin-left: 20px;
+}
+
+/* Position "About Us" and "Logout" at the right end */
+.navbar .about-us {
+  float: right;
+  margin-left: 20px; /* Adjust spacing as needed */
+}
+
+.navbar .logout {
+  float: right;
+  margin-left: 20px; /* Adjust spacing as needed */
+}
+.about-left {
+  max-height:10%;
+  max-width:10%;
+  float: left;
+  margin-right: 20px;
+  /* border-radius: 50%; */
+}
+
+.about-right {
+  max-width: 10%;
+  max-height: 10%;
+  float: right;
+  margin-left: 20px;
+  /* border-radius: 50%; */
+}
+.words{
+  color: azure;
+}
+.back-button {
+  background-color: #003049;
+  color: #e9ecef;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #001f2d;
+}
+/* .about-us-page{
+  background-image: url(C:\Users\Aakarshan\Desktop\html\js\Final\important\src\assets\login2.jpg);
+  background-position: top;
+  background-size: cover;
+  
+} */
+.new-task-form.fixed-form {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list-content {
+  margin-top: 100px; 
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  margin: 0;
+}
